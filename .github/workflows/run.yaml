@@ -5,3 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is pen"
+  check-bats-version-2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is a computetr"
