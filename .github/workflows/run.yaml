@@ -16,7 +16,7 @@ jobs:
           mkdir ./test_dir
   test_job_2:
     runs-on: ubuntu-latest
-      steps:
-        - run: echo "test_job_2"
+    steps:
+      - run: echo "test_job_2"
 
 
