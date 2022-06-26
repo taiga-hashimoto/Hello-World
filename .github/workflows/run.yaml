@@ -30,7 +30,7 @@ jobs:
           name: my-artifact
 
       - name: Run test
-      - run: |
+        run: |
           ls -l
           chmod +x a.out
           ./test.sh
