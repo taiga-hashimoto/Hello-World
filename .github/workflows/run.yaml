@@ -28,7 +28,9 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: my-artifact
-      - run: ls -l
 
       - name: Run test
-        run: ./test.sh
+      - run: |
+          ls -l
+          chmod +x a.out
+          ./test.sh
