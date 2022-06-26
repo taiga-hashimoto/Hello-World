@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 result=$(./a.out)
 if [ "$result" = "Hello World" ]; then
