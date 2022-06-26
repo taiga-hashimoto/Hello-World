@@ -22,7 +22,7 @@ jobs:
       - name: load dist
         uses: actions/download-artifact@v2
         with:
-          name: a.out
+          name: my-artifact
       
       - name: Run test
         run: ./test.sh
