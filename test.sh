@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 result=$(./a.out)
-if [ "$result" = "Hello World" ]; then
+if [ "$result" = "Heo World" ]; then
     echo "test success"
 else
     echo "test failed"
