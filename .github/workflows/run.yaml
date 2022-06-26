@@ -4,9 +4,16 @@ jobs:
   build_job:
     runs-on: ubuntu-latest
     steps:
+      - name: build a.out
       - run: echo "build_job"
       - uses: actions/checkout@v2
       - run: gcc hello.c
+
+      - name: save dist
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: a.out
 
   test_job:
     runs-on: ubuntu-latest
